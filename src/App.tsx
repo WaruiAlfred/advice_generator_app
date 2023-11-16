@@ -1,12 +1,11 @@
 import { QueryClient, QueryClientProvider } from "react-query";
-import "./App.css";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      Advice Generator
+      <p className="text-3xl text-center text-red-400">Advice Generator</p>
     </QueryClientProvider>
   );
 }
