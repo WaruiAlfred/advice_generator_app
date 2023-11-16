@@ -1,11 +1,14 @@
 import { QueryClient, QueryClientProvider } from "react-query";
+import QuoteCard from "./components/QuoteCard";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <p className="text-3xl text-center text-red-400">Advice Generator</p>
+      <div className="w-screen h-screen bg-Dark-Blue flex items-center justify-center">
+        <QuoteCard />
+      </div>
     </QueryClientProvider>
   );
 }
