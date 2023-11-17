@@ -19,7 +19,7 @@ const QuoteCard: FC<QuoteCardProps> = () => {
   const queryClient = useQueryClient();
 
   return (
-    <div className=" relative rounded-lg shadow-md bg-Dark-Grayish-Blue  h-auto w-auto px-10 py-8 flex flex-col items-center gap-3">
+    <div className=" relative rounded-lg shadow-md bg-Dark-Grayish-Blue max-w-sm my-8 min-w-min h-auto w-4/5 px-10 py-8 flex flex-col items-center gap-3 hover:shadow-lg">
       {isLoading && <p className="text-white text-center">Loading...</p>}
       {isError && <p className="text-white text-center">Error</p>}
       {data && (
@@ -35,7 +35,7 @@ const QuoteCard: FC<QuoteCardProps> = () => {
           </div>
           <button
             onClick={() => queryClient.invalidateQueries("advice")}
-            className="absolute -bottom-4 text-Dark-Blue left-25 rounded-full bg-Light-Cyan p-3 flex items-center justify-center hover:bg-Neon-Green"
+            className="absolute -bottom-4 text-Dark-Blue left-25 rounded-full p-3 flex items-center justify-center bg-Neon-Green"
           >
             <Dice5 />
           </button>
