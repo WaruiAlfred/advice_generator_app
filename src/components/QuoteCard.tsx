@@ -35,7 +35,7 @@ const QuoteCard: FC<QuoteCardProps> = () => {
           </div>
           <button
             onClick={() => queryClient.invalidateQueries("advice")}
-            className="absolute -bottom-4 text-Dark-Blue left-25 rounded-full p-3 flex items-center justify-center bg-Neon-Green"
+            className="absolute -bottom-4 text-Dark-Blue left-25 rounded-full p-3 flex items-center justify-center bg-Neon-Green hover:drop-shadow-2xl hover:scale-110"
           >
             <Dice5 />
           </button>
