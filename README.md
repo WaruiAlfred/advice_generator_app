@@ -29,4 +29,5 @@ yarn dev
   ![Desktop view](./src/assets/screenshots/desktop.png)
 
 - Mobile view
-  ![Mobile view](./src/assets/screenshots/mobile.png)
+
+  <img src="./src/assets/screenshots/mobile.png" alt="Mobile view" width="200" height="400">
