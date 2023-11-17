@@ -1,6 +1,7 @@
+import { Dice5 } from "lucide-react";
 import { FC } from "react";
-import { Dice5, Tally2 } from "lucide-react";
 import { useQuery, useQueryClient } from "react-query";
+import PauseBar from "../assets/pause-bars.svg";
 
 // Function that fetches a random advice from the API and returns a promise
 const getRandomAdvice = async () => {
@@ -29,7 +30,7 @@ const QuoteCard: FC<QuoteCardProps> = () => {
           <p className="text-[800] text-white">“{data?.slip?.advice}”</p>
           <div className="w-full flex text-Grayish-Blue items-center justify-center gap-2 my-6">
             <hr className="w-full" />
-            <Tally2 size={60} color="#fff" />
+            <img src={PauseBar} alt="pause bar" className="w-5 h-5 " />
             <hr className="w-full" />
           </div>
           <button
