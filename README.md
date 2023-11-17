@@ -22,3 +22,11 @@ yarn
 ```bash
 yarn dev
 ```
+
+## Screenshots
+
+- Desktop view
+  ![Desktop view](./src/assets/screenshots/desktop.png)
+
+- Mobile view
+  ![Mobile view](./src/assets/screenshots/mobile.png)
